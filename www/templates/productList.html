@@ -1,0 +1,16 @@
+<ion-view title="Product List" id="page1">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button button-icon icon ion-ios-plus-empty" ui-sref="newProduct"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <ion-list id="productList-list1" class="manual-list-fullwidth" 
+    ng-repeat="product in myProducts">
+      <ion-item class="item-thumbnail-left item-icon-right" id="productList-list-item1" ui-sref="productDetails({id:product.id})">
+        <img src="{{product.imageURL}}">
+        <h2>{{product.name}}</h2>
+        <p>RM {{product.price}}</p>
+        <i class="icon ion-ios-arrow-forward icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+<ion-view title="New Product" id="page3">
+  <ion-content padding="true" class="has-header">
+    <form id="newProduct-form1" class="list">
+      <label class="item item-input" id="newProduct-input1">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="" ng-model="$parent.product.name">
+      </label>
+      <label class="item item-input" id="newProduct-input2">
+        <span class="input-label">Desciption</span>
+        <input type="text" placeholder="" ng-model="$parent.product.description">
+      </label>
+      <label class="item item-input" id="newProduct-input3">
+        <span class="input-label">Price</span>
+        <input type="text" placeholder="" ng-model="$parent.product.price">
+      </label>
+      <label class="item item-input" id="newProduct-input4">
+        <span class="input-label">Image URL</span>
+        <input type="text" placeholder="" ng-model="$parent.product.imageURL">
+      </label>
+    </form>
+    <button ng-click="submitProduct()" id="newProduct-button1" class="button button-positive  button-block">Add New Product</button>
+  </ion-content>
+</ion-view>
